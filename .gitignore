@@ -61,6 +61,6 @@ dataset/*
 /local_scripts
 /notes
 
-/audiocraft/models/vanya_aidnb_0.1
-/audiocraft/models/hoenn_lofi
-/audiocraft/models/budots_remix
+audiocraft/models/vanya_aidnb_0.1
+audiocraft/models/hoenn_lofi
+audiocraft/models/budots_remix
