@@ -64,3 +64,6 @@ dataset/*
 audiocraft/models/vanya_aidnb_0.1
 audiocraft/models/hoenn_lofi
 audiocraft/models/budots_remix
+
+express-server/node_modules/
+
