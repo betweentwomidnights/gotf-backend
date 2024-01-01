@@ -31,7 +31,7 @@ import re
 
 
 # Establish a connection to the MongoDB server
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient('mongodb://mongo:27017/')
 
 # Select your database
 db = client['name']
@@ -39,12 +39,13 @@ db = client['name']
 # For example, use the 'audio_tasks' collection
 audio_tasks = db.audio_tasks
 
-redis_conn = Redis()
+# After
+redis_conn = Redis(host='redis', port=6379)
 q = Queue(connection=redis_conn)
 
 app = Flask(__name__)
 CORS(app)
-executor = ThreadPoolExecutor(max_workers=2)
+executor = ThreadPoolExecutor(max_workers=24)
 
 def is_valid_youtube_url(url):
     youtube_regex = (
