@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   web:
-    build: .
+    image: thecollabagepatch/concurrent_gary:fixed
     ports:
       - "8000:8000"
     depends_on:
@@ -13,7 +13,7 @@ services:
   redis:
     image: "redis:alpine"
     ports:
-      - "6379:6379"
+      - "6378:6379"
 
   mongo:
     image: "mongo:latest"
@@ -23,7 +23,7 @@ services:
       - mongo-data:/data/db
 
   express-server:
-    build: ./express-server
+    image: thecollabagepatch/express-server:latest
     ports:
       - "3000:3000"
 
