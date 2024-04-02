@@ -1,3 +1,48 @@
+this is the backend for gary on the fly
+![gotf-waveforms](https://github.com/betweentwomidnights/gotf-backend/assets/129577321/cf6cbb81-6c05-4c1c-9280-2bcdef792128)
+
+an extension for remixing any youtube.com/watch page with musicgen continuations. 
+
+using flask, mongoDB, rq worker + redis 
+
+an express js server for the cropping of waveforms in the newtab component, and for exporting the arrangement to mp3.
+
+the main script is concurrent_gary.py
+
+a standalone colab notebook for doing these continuations with any input audio is here:
+
+https://colab.research.google.com/drive/10CMvuI6DV_VPS0uktbrOB8jBQ7IhgDgL?usp=sharing
+
+the front-end for this extension can be found here:
+
+https://github.com/betweentwomidnights/gotf-frontend
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # AudioCraft
 ![docs badge](https://github.com/facebookresearch/audiocraft/workflows/audiocraft_docs/badge.svg)
 ![linter badge](https://github.com/facebookresearch/audiocraft/workflows/audiocraft_linter/badge.svg)
